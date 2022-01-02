@@ -3,7 +3,7 @@ import random
 from discord.ext import commands
 
 client = commands.Bot(command_prefix = '.')
-
+TOKEN = 'tokencharacters'
 @client.event
 async def on_ready():
     print('Bot is ready')
@@ -27,4 +27,4 @@ async def shoot(ctx, *, shoot):
     else:
         await ctx.send("I lose :(")
     
-client.run('OTI2NzQ4NDYwMzM2Njk3Mzk0.YdALww.jpKS1AFepngIA00zhixSyVm-u50')
+client.run(TOKEN)
